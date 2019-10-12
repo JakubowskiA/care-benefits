@@ -42,7 +42,7 @@ class PrescriptionPage extends Component{
         
     return(
         <Fragment>
-        <h3>My Prescriptions</h3>
+        <h2>My Prescriptions</h2>
         <br/>
         <div className = "display-medication">
             <h4>Aspirin</h4>
@@ -57,7 +57,7 @@ class PrescriptionPage extends Component{
             <p>Special Instructions: Avoid grapefruit and cruciferous vegetables like broccoli and cauliflower.</p>
         </div>
         <br/>
-        <h3>Add a new prescription</h3>
+        <h2>Add a new prescription</h2>
         <br/>
         <PrescriptionForm />
         </Fragment>
