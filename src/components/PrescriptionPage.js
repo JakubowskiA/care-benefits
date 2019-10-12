@@ -2,12 +2,7 @@ import React, {Component, Fragment} from 'react';
 import PrescriptionForm from './PrescriptionForm';
 
 class PrescriptionPage extends Component{
-    state={
-        rxName:"",
-        dose:"",
-        time:"",
-        specialInstructions:""
-    }
+
     // Controls form inputs
     handleChange = event => {
         const inputType = event.target.name
@@ -45,18 +40,25 @@ class PrescriptionPage extends Component{
         
     return(
         <Fragment>
+        <h2>My Prescriptions</h2>
         <br/>
         <div className = "display-medication">
             <h4>Aspirin</h4>
-            <p>Dose: 81mg</p>
-            <p>When to take: Take one pill each morning.</p>
-            <p>Special Instructions: Take with plenty of water.</p>
+            <p><strong>Dose:</strong> 81mg</p>
+            <p><strong>When to take:</strong> Take one pill each morning.</p>
+            <p><strong>Special Instructions:</strong> Take with plenty of water.</p>
         </div>
         <div className = "display-medication">
             <h4>Warfarin</h4>
-            <p>Dose: 2mg</p>
-            <p>When to take: Take one pill each morning.</p>
-            <p>Special Instructions: Avoid grapefruit and cruciferous vegetables like broccoli and cauliflower.</p>
+            <p><strong>Dose:</strong> 2mg</p>
+            <p><strong>When to take:</strong> Take one pill each morning.</p>
+            <p><strong>Special Instructions:</strong> Avoid grapefruit and cruciferous vegetables like broccoli and cauliflower.</p>
+        </div>
+        <div className = "display-medication">
+            <h4>Zocor</h4>
+            <p><strong>Dose:</strong> 40mg</p>
+            <p><strong>When to take:</strong> Take one pill each evening.</p>
+            <p><strong>Special Instructions:</strong> Do NOT take with food.</p>
         </div>
         <div className = "display-medication">
             <h4>Zocor</h4>
@@ -64,10 +66,6 @@ class PrescriptionPage extends Component{
             <p>When to take: Take one pill each evening.</p>
             <p>Special Instructions: Do NOT take with food.</p>
         </div>
-        <br/>
-
-        <h2>Add a new prescription</h2>
-
         <br/>
         <PrescriptionForm />
         </Fragment>
