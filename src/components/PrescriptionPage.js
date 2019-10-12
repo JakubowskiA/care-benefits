@@ -1,9 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import PrescriptionForm from './PrescriptionForm';
 
-
 class PrescriptionPage extends Component{
-    
 
     // Controls form inputs
     handleChange = event => {
@@ -14,29 +12,29 @@ class PrescriptionPage extends Component{
     }
 
     // Sends information to backend to add new entry to database
-    submitEntry=(event, entry)=>{
-        event.preventDefault()
-        this.setState({submitted: true})
-        console.log('entry',entry)
-        fetch('http://localhost:3000/entries',{
-          method: 'POST',
-          headers:{
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-          },body:JSON.stringify({
-            prescription: {
-                // pre_level: this.state.preLevel,
-                // user_id: this.props.userId
-            }
-          })
-        })
-        .then(res=>res.json())
-        .then(data => {
-            console.log('Response Data', data);
-            // this.setState({ user: data.user });
-            // this.props.history.push('/welcome');
-        })
-      }
+    // submitEntry=(event, entry)=>{
+    //     event.preventDefault()
+    //     this.setState({submitted: true})
+    //     console.log('entry',entry)
+    //     fetch('http://localhost:3000/entries',{
+    //       method: 'POST',
+    //       headers:{
+    //         "Content-Type": "application/json",
+    //         "Accept": "application/json"
+    //       },body:JSON.stringify({
+    //         prescription: {
+    //             // pre_level: this.state.preLevel,
+    //             // user_id: this.props.userId
+    //         }
+    //       })
+    //     })
+    //     .then(res=>res.json())
+    //     .then(data => {
+    //         console.log('Response Data', data);
+    //         // this.setState({ user: data.user });
+    //         // this.props.history.push('/welcome');
+    //     })
+    //   }
 
     render(){
         
@@ -61,6 +59,12 @@ class PrescriptionPage extends Component{
             <p><strong>Dose:</strong> 40mg</p>
             <p><strong>When to take:</strong> Take one pill each evening.</p>
             <p><strong>Special Instructions:</strong> Do NOT take with food.</p>
+        </div>
+        <div className = "display-medication">
+            <h4>Zocor</h4>
+            <p>Dose: 40mg</p>
+            <p>When to take: Take one pill each evening.</p>
+            <p>Special Instructions: Do NOT take with food.</p>
         </div>
         <br/>
         <PrescriptionForm />

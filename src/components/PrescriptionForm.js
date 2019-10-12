@@ -1,7 +1,6 @@
 import React, {Component, Fragment} from 'react';
 // import { withRouter } from 'react-router-dom';
 
-
 class PrescriptionForm extends Component{
     state={
         rxName:"",
@@ -9,7 +8,6 @@ class PrescriptionForm extends Component{
         time:"",
         specialInstructions:"",
         addHide:"hide"
-
     }
 
     // Controls form inputs
