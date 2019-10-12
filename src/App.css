@@ -1,11 +1,10 @@
+header{
+  font-size: 24pt;
+  margin: 2em;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -16,7 +15,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #09d3ac;
+}
+
+.display-medication{
+  text-align: left;
+  background-color: aliceblue;
+  border-radius: 2%;
+  margin: 5%;
+  margin-bottom: 0%;
+  margin-top: 2%;
+  padding: 2%;
 }
