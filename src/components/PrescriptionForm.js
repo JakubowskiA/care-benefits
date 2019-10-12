@@ -59,7 +59,7 @@ class PrescriptionForm extends Component{
             <label>When will this medication be taken?</label>
             <input type="text" name="time" onChange={this.handleChange}/>
             <br/><br/>
-            <label>Are there any special instructions for taking this medication?</label>
+            <label>Are there any special instructions for taking this medication? </label>
             <br/>
             <textarea name="specialInstructions" onChange={this.handleChange}/>
             <br/><br/>
