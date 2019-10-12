@@ -3,6 +3,10 @@ header{
   margin: 2em;
 }
 
+textarea{
+  width: 50%;
+}
+
 .App {
   text-align: center;
 }
@@ -18,8 +22,9 @@ header{
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.nav-item {
+  margin: 1em;
+  margin-left: 5em;
 }
 
 .display-medication{
@@ -30,4 +35,14 @@ header{
   margin-bottom: 0%;
   margin-top: 2%;
   padding: 2%;
+}
+
+.prescription-form{
+  margin: 5%;
+  margin-top: 0%;
+  text-align: left;
+}
+
+.hide{
+  display: none;
 }

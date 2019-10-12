@@ -7,7 +7,8 @@ class PrescriptionForm extends Component{
         rxName:"",
         dose:"",
         time:"",
-        specialInstructions:""
+        specialInstructions:"",
+        addHide:"hide"
 
     }
 
@@ -44,23 +45,35 @@ class PrescriptionForm extends Component{
         })
       }
 
+      toggleHide=()=>{
+        if(this.state.addHide === "hide"){
+            this.setState({addHide:""})
+        }else{
+            this.setState({addHide:"hide"})
+        }
+      }
+
     render(){
         
     return(
         <Fragment>
-        <form onSubmit={(event)=>this.submitEntry(event, this.state)} className="entry-form">
+        <h2 onClick={this.toggleHide}>Add a new prescription?</h2>
+        <br/>
+        <div className={this.state.addHide}>
+        <form onSubmit={(event)=>this.submitEntry(event, this.state)} className="prescription-form">
         <br/>
             <label>Medication Name: </label>
             <input type="text" onChange={this.handleChange} name="rxName"/>
-            <br/><br/>
+            <br/><br/><br/>
             <label>Medication Dose: </label>
             <input type="text" name="dose" onChange={this.handleChange}/>
-            <br/><br/>
+            <br/><br/><br/>
             <label>When will this medication be taken?</label>
-            <input type="text" name="time" onChange={this.handleChange}/>
             <br/><br/>
+            <textarea name="time" onChange={this.handleChange}/>
+            <br/><br/><br/>
             <label>Are there any special instructions for taking this medication? </label>
-            <br/>
+            <br/><br/>
             <textarea name="specialInstructions" onChange={this.handleChange}/>
             <br/><br/>
             <br/>
@@ -68,6 +81,7 @@ class PrescriptionForm extends Component{
             <br/><br/>
         </form>
         <br/><br/>
+        </div>
         </Fragment>
     )}
 }
