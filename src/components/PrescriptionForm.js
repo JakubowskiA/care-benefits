@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react';
 // import { withRouter } from 'react-router-dom';
+
 class PrescriptionForm extends Component{
     state={
         rxName:"",
@@ -7,6 +8,7 @@ class PrescriptionForm extends Component{
         time:"",
         specialInstructions:""
     }
+
     // Controls form inputs
     handleChange = event => {
         const inputType = event.target.name
@@ -14,6 +16,7 @@ class PrescriptionForm extends Component{
             [inputType]: event.target.value
         })
     }
+
     // Sends information to backend to add new entry to database
     submitEntry=(event, entry)=>{
         event.preventDefault()
@@ -38,6 +41,7 @@ class PrescriptionForm extends Component{
             // this.props.history.push('/welcome');
         })
       }
+
     render(){
         
     return(
@@ -53,7 +57,6 @@ class PrescriptionForm extends Component{
             <label>When will this medication be taken?</label>
             <input type="text" name="time" onChange={this.handleChange}/>
             <br/><br/>
-            <label>Are there any special instructions for taking this medication?</label>
             <label>Are there any special instructions for taking this medication? </label>
             <br/>
             <textarea name="specialInstructions" onChange={this.handleChange}/>
@@ -66,4 +69,5 @@ class PrescriptionForm extends Component{
         </Fragment>
     )}
 }
+
 export default PrescriptionForm
