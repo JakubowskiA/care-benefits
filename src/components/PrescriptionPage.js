@@ -48,26 +48,11 @@ class PrescriptionPage extends Component{
         
     return(
         <Fragment>
-        <form onSubmit={(event)=>this.submitEntry(event, this.state)} className="entry-form">
+        <h3>My Prescriptions</h3>
         <br/>
-            <label>Medication Name: </label>
-            <input type="text" onChange={this.handleChange} name="rxName"/>
-            <br/><br/>
-            <label>Medication Dose: </label>
-            <input type="text" name="dose" onChange={this.handleChange}/>
-            <br/><br/>
-            <label>When will this medication be taken?</label>
-            <input type="text" name="time" onChange={this.handleChange}/>
-            <br/><br/>
-            <label>Are there any special instrubtions for taking this medication?</label>
-            <br/>
-            <textarea name="specialInstructions" onChange={this.handleChange}/>
-            <br/><br/>
-            <br/>
-            <input type="Submit" className="normal-button" disabled={this.state.submitted === true}/>
-            <br/><br/>
-        </form>
-        <br/><br/>
+        <br/>
+        <h3>Add a new prescription</h3>
+        <br/>
         <PrescriptionForm />
         </Fragment>
     )}
