@@ -60,12 +60,6 @@ class PrescriptionPage extends Component{
             <p><strong>When to take:</strong> Take one pill each evening.</p>
             <p><strong>Special Instructions:</strong> Do NOT take with food.</p>
         </div>
-        <div className = "display-medication">
-            <h4>Zocor</h4>
-            <p>Dose: 40mg</p>
-            <p>When to take: Take one pill each evening.</p>
-            <p>Special Instructions: Do NOT take with food.</p>
-        </div>
         <br/>
         <PrescriptionForm />
         <br/>
