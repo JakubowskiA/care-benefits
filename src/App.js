@@ -1,15 +1,18 @@
 import React from 'react';
 import './App.css';
+import PrescriptionPage from './components/PrescriptionPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
         Care Benefits
       </header>
       <nav>
-        
+
       </nav>
+
+      <PrescriptionPage />
     </div>
   );
 }
