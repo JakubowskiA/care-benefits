@@ -58,6 +58,12 @@ class PrescriptionPage extends Component{
             <p>When to take: Take one pill each morning.</p>
             <p>Special Instructions: Avoid grapefruit and cruciferous vegetables like broccoli and cauliflower.</p>
         </div>
+        <div className = "display-medication">
+            <h4>Zocor</h4>
+            <p>Dose: 40mg</p>
+            <p>When to take: Take one pill each evening.</p>
+            <p>Special Instructions: Do NOT take with food.</p>
+        </div>
         <br/>
 
         <h2>Add a new prescription</h2>
