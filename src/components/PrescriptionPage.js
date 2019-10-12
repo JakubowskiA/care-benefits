@@ -50,17 +50,17 @@ class PrescriptionPage extends Component{
         <Fragment>
         <h3>My Prescriptions</h3>
         <br/>
-        <div>
-            <h4>Dabigatron</h4>
-            <p>Dose: 150mg</p>
+        <div className = "display-medication">
+            <h4>Aspirin</h4>
+            <p>Dose: 81mg</p>
             <p>When to take: Take one pill each morning.</p>
             <p>Special Instructions: Take with plenty of water.</p>
         </div>
-        <div>
-            <h4></h4>
-            <p>Dose: </p>
-            <p>When to take:</p>
-            <p>Special Instructions:</p>
+        <div className = "display-medication">
+            <h4>Warfarin</h4>
+            <p>Dose: 2mg</p>
+            <p>When to take: Take one pill each morning.</p>
+            <p>Special Instructions: Avoid grapefruit and cruciferous vegetables like broccoli and cauliflower.</p>
         </div>
         <br/>
         <h3>Add a new prescription</h3>
