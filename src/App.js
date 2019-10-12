@@ -9,7 +9,9 @@ function App() {
         Care Benefits
       </header>
       <nav>
-
+        <span className="nav-item">My Medications</span>
+        <span className="nav-item">My Appointments</span>
+        <span className="nav-item">Logout</span>
       </nav>
 
       <PrescriptionPage />
