@@ -8,6 +8,10 @@ textarea{
   width: 50%;
 }
 
+.App {
+  text-align: center;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -19,8 +23,9 @@ textarea{
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.nav-item {
+  margin: 1em;
+  margin-left: 5em;
 }
 
 .display-medication{
@@ -36,4 +41,9 @@ textarea{
 .prescription-form{
   margin: 5%;
   margin-top: 0%;
+  text-align: left;
+}
+
+.hide{
+  display: none;
 }
