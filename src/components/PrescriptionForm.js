@@ -60,11 +60,19 @@ class PrescriptionForm extends Component{
         <div className={this.state.addHide}>
         <form onSubmit={(event)=>this.submitEntry(event, this.state)} className="prescription-form">
         <br/>
-            <label>Medication Name: </label>
-            <input type="text" onChange={this.handleChange} name="rxName"/>
-            <br/><br/><br/>
+        <div className="rxf-spacer-grp">
+            <div className="rxf-spacer">
+                <label>Medication Name: </label>
+                <input type="text" onChange={this.handleChange} name="rxName"/>
+            </div>
+            
+            {/* <br/><br/><br/> */}
+            <div className="rxf-spacer">
             <label>Medication Dose: </label>
             <input type="text" name="dose" onChange={this.handleChange}/>
+            </div>
+            </div>
+            
             <br/><br/><br/>
             <label>When will this medication be taken?</label>
             <br/><br/>

@@ -41,7 +41,20 @@ textarea{
 .prescription-form{
   margin: 5%;
   margin-top: 0%;
-  text-align: left;
+  text-align: center;
+  background-color: aliceblue;
+  padding: 3%;
+}
+
+.rxf-spacer{
+  margin-left: 5%
+}
+
+.rxf-spacer-grp{
+  display: flex;
+  text-align: center;
+  align-content: center;
+  margin-left: 18em;
 }
 
 .hide{

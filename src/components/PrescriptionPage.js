@@ -40,7 +40,7 @@ class PrescriptionPage extends Component{
         
     return(
         <Fragment>
-        <h2>My Prescriptions</h2>
+        <h2>Prescriptions</h2>
         <br/>
         <div className = "display-medication">
             <h4>Aspirin</h4>
@@ -68,6 +68,8 @@ class PrescriptionPage extends Component{
         </div>
         <br/>
         <PrescriptionForm />
+        <br/>
+        <br/>
         </Fragment>
     )}
 }
