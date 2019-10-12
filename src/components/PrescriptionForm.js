@@ -1,14 +1,12 @@
 import React, {Component, Fragment} from 'react';
 // import { withRouter } from 'react-router-dom';
 
-
 class PrescriptionForm extends Component{
     state={
         rxName:"",
         dose:"",
         time:"",
         specialInstructions:""
-
     }
 
     // Controls form inputs
@@ -48,7 +46,7 @@ class PrescriptionForm extends Component{
         
     return(
         <Fragment>
-        <form onSubmit={(event)=>this.submitEntry(event, this.state)} className="entry-form">
+        <form onSubmit={(event)=>this.submitEntry(event, this.state)} className="prescription-form">
         <br/>
             <label>Medication Name: </label>
             <input type="text" onChange={this.handleChange} name="rxName"/>

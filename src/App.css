@@ -1,10 +1,11 @@
 header{
   font-size: 24pt;
   margin: 2em;
+  text-align: center;
 }
 
-.App {
-  text-align: center;
+textarea{
+  width: 50%;
 }
 
 .App-header {
@@ -30,4 +31,9 @@ header{
   margin-bottom: 0%;
   margin-top: 2%;
   padding: 2%;
+}
+
+.prescription-form{
+  margin: 5%;
+  margin-top: 0%;
 }
